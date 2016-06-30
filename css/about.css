@@ -1,0 +1,11 @@
+.who_are article{
+	margin-bottom: 1em;
+}
+.who_are article h3{
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 1em;
+}
+.who_are article p,.who_are article ul{
+	text-indent: 2em;
+}

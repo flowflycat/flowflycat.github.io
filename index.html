@@ -1,269 +1,150 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  
-  <title>秒速5厘米</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="秒速5厘米">
-<meta property="og:url" content="http://flowflycat.github.io/index.html">
-<meta property="og:site_name" content="秒速5厘米">
-<meta property="og:description">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="秒速5厘米">
-<meta name="twitter:description">
-  
-    <link rel="alternate" href="/atom.xml" title="秒速5厘米" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
-
+	<meta charset="utf-8">
+	<title>金色晚年</title>
+	<link rel="shortcut icon" href="images/logo-ico.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/responsiveslides.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/responsiveslides.js"></script>
+	<script type="text/javascript" src></script>
+	<script>
+		$(function () {
+		  $("#slider").responsiveSlides({
+			auto: true,
+			pager: true,
+			nav: true,
+			speed: 500,
+			maxwidth: 1170,
+			namespace: "centered-btns"
+		  });
+		});
+	</script>
 </head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">秒速5厘米</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">逝水流年</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://flowflycat.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-FrontEnd-and-Me" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/05/25/FrontEnd-and-Me/" class="article-date">
-  <time datetime="2016-05-25T12:51:39.674Z" itemprop="datePublished">2016-05-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/25/FrontEnd-and-Me/">前端与我</a>
-    </h1>
-  
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logo.png" title="logo" />
+				</a>
+			</div>
+			<nav class="navigation">
+					<ul class="navbar">
+					  <li class="active"><a href="index.html">首页</li>
+					  <li><a href="about.html">关于我们</a></li>
+					  <li><a href="news.html">资讯动态</a></li>
+					  <li><a href="projects.html">产品中心</a></li>
+					  <li><a href="contact.html">联系我们</a></li>
+					</ul>	
+			</nav>
+		</div>	
+	</header>
+	<div class="banner">
+		<div class="container">
+			<div class="row-bot">
+				<div class="slider zerogrid">
+			   	<div class="rslides_container">
+						<ul class="rslides" id="slider">
+							<li><img src="images/banner-img1.jpg" alt="" /></li>
+							<li><img src="images/banner-img2.jpg" alt="" /></li>
+							<li><img src="images/banner-img3.jpg" alt="" /></li>
+						</ul>
+					</div>
+			   </div>
+		  </div>
+		</div>
+	</div>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>date: 2016-05-25 20:51:39<br>tags: web frontend<br>—认识前端：前端这个词是突然出现在我生活中的，了解到它是总有人跟我说要成为前端，然后，我被她洗脑了，意志薄弱的样本，Q_Q。然后在一次工作之余，扫了两眼，然后一发而不可收，很难想象那么懒惰的我在每天高强度工作之后还能在晚上自己学习到深夜，前端的魅力真的很大，终于发现现在的生活不是我想要的，我想做前端，我想做一个NB的前端，我想做一个超级超级超级NB的前端。</p>
+	<div class="function">
+		<div class="container">
+			<div class="fn fn-1 clearfix">
+				<img class="col-md-6" src="images/pr-114.jpg">
+				<div class="col-md-6">
+					<h3>114专属人工服务</h3>
+					<p>独有114金色晚年专线专席服务平台，专为老人提供服务</p>
+				</div>
+			</div>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://flowflycat.github.io/2016/05/25/FrontEnd-and-Me/" data-id="ciomvztdl000004gorussckiv" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-my-blog-start" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/05/25/my-blog-start/" class="article-date">
-  <time datetime="2016-05-25T10:23:24.957Z" itemprop="datePublished">2016-05-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/25/my-blog-start/">my_blog_start</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>date: 2016-05-25 18:23:24<br>tags:<br>—this is a demo for test,I try to build a blog with hexo.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://flowflycat.github.io/2016/05/25/my-blog-start/" data-id="ciomvztft000204go7wq9xgk8" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/05/25/hello-world/" class="article-date">
-  <time datetime="2016-05-25T10:10:37.024Z" itemprop="datePublished">2016-05-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/25/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://flowflycat.github.io/2016/05/25/hello-world/" data-id="ciomvztec000104go6mbo95t9" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2016/05/25/FrontEnd-and-Me/">前端与我</a>
-          </li>
-        
-          <li>
-            <a href="/2016/05/25/my-blog-start/">my_blog_start</a>
-          </li>
-        
-          <li>
-            <a href="/2016/05/25/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2016 FFC<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-  </div>
+			<div class="fn fn-2 clearfix">
+				<div class="col-md-6">
+					<h3>实时定位 · 电子围栏 · 轨迹回访</h3>
+					<p>智能手表终端具有GPS定位功能，客服中心人员通过平台可实现"实时定位"，监护人可通过智能手机实时掌握监控对象所在位置，为监护对象的安全提供多重保障。</p>
+					<p>通过历史轨迹功能可以查询在一段时间内用户的活动轨迹，方便迅速得到他们的活动信息，有效解决老人的走失问题。</p>
+					<p>监护人可在手机端设立使用者的活动范围，当其活动范围超出设定时，系统会语音提示使用者并告知监护人，让监护人真正做到"防""护"无忧，确保使用者的出行安全。</p>
+				</div>
+				<img class="col-md-6" src="images/demo.jpg">
+			</div>
+			<div class="fn fn-3 clearfix">
+				<img class="col-md-6" src="images/pr-woyu.jpg">
+				<div class="col-md-6">
+					<h3>联通云平台，保护您的资料</h3>
+					<p>深度整合中国联通云平台，产品采用联通后台作数据存储及交互，使用更安全、沟通更畅快，充分杜绝个人信息数据泄漏！</p>
+				</div>
+			</div>
+			<div class="fn fn-4 clearfix">
+				<div class="col-md-6" >
+					<h3>一键SOS</h3>
+					<p>当终端使用老人发生医疗、火灾、盗窃等紧急情况时可长按SOS键实现"一键呼救"，系统将自动向预设好的联系人电话发送求救信号，并将地理位置信息实时传送到手机端，针对突发意外实现全方位守护。</p>
+				</div>
+				<img class="col-md-6" src="images/pr-4.jpg">
+			</div>
+			
+		</div>	  	
+	</div>
+	<div class="details">
+		<div class="container clearfix">
+			<div class="de de-company col-md-4">
+				<h3>公司动态</h3>
+				<ul>
+					<li><a href="news/new20160628.html">“孝行天下 关爱老人” 老人专属智能腕表在京发布</a></li>
+					<li><a href="news/new20160628.html">“孝行天下 关爱老人” 老人专属智能腕表在京发布</a></li>
+					<li><a href="news/new20160628.html">“孝行天下 关爱老人” 老人专属智能腕表在京发布</a></li>
+					<li><a href="news/new20160628.html">“孝行天下 关爱老人” 老人专属智能腕表在京发布</a></li>
+					<li><a href="news/new20160628.html">“孝行天下 关爱老人” 老人专属智能腕表在京发布</a></li>
+				</ul>
+				<a href="new.html">了解更多 ></a>
+			</div>
+			<div class="de de-industry col-md-4">
+				<h3>行业动态</h3>
+				<ul>
+					<li><a href="#">上海“智慧养老”模式获多地“复制”</a></li>
+					<li><a href="#">老龄化烦恼如何消除?</a></li>
+					<li><a href="#">习近平：推动老龄事业全面协调可持续发展</a></li>
+					<li><a href="#">民政部等四部门发文：关注老年人意外伤害</a></li>
+					<li><a href="#">第五届中国国际养老服务业博览会今日在京开幕</a></li>
+				</ul>
+				<a href="new.html">了解更多 ></a>
+			</div>
+			<div class="de de-contact col-md-4">
+				<h3>联系我们</h3>
+				<ul>
+					<li>地址 ：北京市丰台区开阳路8号9层A901-1</li>
+					<li>邮编 ：100069</li>
+					<li>电话 ：(010) 6348 6655</li>
+					<li>邮箱 ：<a href="mailto:info@example.com">mail</a></li>
+					<li>其他联系方式 ：<a href="#" onclick="js_method();return false;">微信</a><a href="#" onclick="js_method();return false;">微博</a>
+					</li>
+				</ul>
+				<a href="contact.html">了解更多 ></a>
+			</div>
+		</div>
+	</div>
+	<!--在线咨询模块，暂未开发
+	<aside class="advice">
+	</aside>
+	-->
+	<footer>
+		<div class="container">
+			<div class="copyright">
+				<img src="images/logo.png">
+				<p>©2016 金色晚年（北京）科技产业有限公司 All Rights Reserved.</p>
+			</div>
+		</div>
+	</footer>	
 </body>
-</html>
+</html>		

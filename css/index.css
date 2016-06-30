@@ -1,0 +1,78 @@
+/*轮播图*/
+.banner{
+  padding: 2em 0;
+}
+/*功能宣传*/
+.function{
+
+}
+.fn{
+  width: 100%;
+}
+.fn-1{
+  background: #01B3D7;
+  color: #F5f5f5;
+}
+.fn-2{
+  background: #D4EADD;
+}
+.fn-3{
+  background: #4E96D0;
+  color: #ffffff;
+}
+.fn-3 img{
+  margin-left: -1em;
+}
+.fn-4{
+  background: #ffffff;
+  color: #A6A6F5;
+}
+.fn-4 p{
+  color: #333333;
+}
+
+div.col-md-6>h3{
+  font-size: 2em;
+  margin-top: 25%; 
+  margin-left:2em; 
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #cccccc;
+}
+div.col-md-6>p{
+  line-height: 2;
+  margin-bottom: 1em;
+  padding-left: 4em;
+}
+
+/*详情相关*/
+.details{
+
+}
+.de{
+  float: left;
+  position: relative;
+  padding: 0.5em 1em;
+}
+.de h3{
+  color: #e10f17;
+  font-size: 1.5em;
+  font-family: "黑体";
+}
+.de ul{
+  margin-left: 2em;
+}
+.de li{
+  display: block;
+  list-style-image: url("../images/list-01.png");
+  margin:1em 0;
+}
+.de>a{
+  position: absolute;
+  right: 10px;
+  top: 3px;
+}
+.de-company,.de-industry{
+  border-right: 1px solid #232323;
+}
+/*咨询模块*/

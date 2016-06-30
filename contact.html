@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="shortcut icon" href="images/logo-ico.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<style type="text/css">
+	    html,body{margin:0;padding:0;}
+	    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+	    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logo.png" title="logo" />
+				</a>
+			</div>
+			<nav class="navigation">
+					<ul class="navbar">
+					  <li class="active"><a href="index.html">首页</li>
+					  <li><a href="about.html">关于我们</a></li>
+					  <li><a href="news.html">资讯动态</a></li>
+					  <li><a href="projects.html">产品中心</a></li>
+					  <li><a href="contact.html">联系我们</a></li>
+					</ul>	
+			</nav>
+		</div>	
+	</header>
+
+	<div class="contact">
+	    <div class="container">
+	    	<div class="contact-header main">
+	    	  <h3>联系我们</h3>
+	    	  <ol class="breadcrumb">
+	    	    <li>
+	    	      <a href="index.html">主页</a></li>
+	    	    <li class="active">联系我们</li></ol>
+	    	</div>
+	    	<div class="contact-content">
+	    	  <div class="col-md-6 contact_left ">
+	    	    <h3>您的反馈</h3>
+	    	    <form>
+	    	      <div class="form_details">
+	    	        <input type="text" class="text" value="姓名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '姓名';}">
+	    	        <input type="text" class="text" value="邮箱" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '邮箱';}">
+	    	        <input type="text" class="text" value="问题" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '问题';}">
+	    	        <textarea value="详细描述" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '详细描述';}">详细描述</textarea>
+	    	        <div class="clearfix"></div>
+	    	        <input name="submit" type="submit" value="提交"></div>
+	    	    </form>
+	    	  </div>
+	    	  <div class="col-md-6 contact_right">
+	    	  	<h3>联系方式</h3>
+	    	    <div class="address">
+	    	      <ul>
+	    	        <li>地址 : 北京市丰台区开阳路8号9层A901-1</li>
+	    	        <li>邮编 : 100069</li>
+	    	        <li>电话 : (010) 6348 6655</li>
+	    	        <li>邮箱 :
+	    	          <a href="mailto:info@example.com">info(at)example.com（待完善）</a></li>
+	    	        <li>其他联系方式 ：
+	    	        	<a href="#" onclick="js_method();return false;">微信</a><span style="width:4em"></span>
+	    	        	<a href="#" onclick="js_method();return false;">微博</a>
+	    	        </li>
+	    	      </ul>
+	    	    </div>
+	    	  </div>
+	    	  <div class="clearfix"></div>
+	    	</div>
+	    	<div id="dituContent"></div>
+	    	<script type="text/javascript" src="js/createmap.js"></script>
+	    </div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="copyright">
+				<img src="images/logo.png">
+				<p>©2016 金色晚年（北京）科技产业有限公司 All Rights Reserved.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
