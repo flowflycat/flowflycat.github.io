@@ -1,0 +1,42 @@
+/*main*/
+.m_t>div>div{
+	background: #fff;
+}
+.main p{
+	color: #b0b0b0;
+}
+.m_t_l_t_l,
+.m_t_l_b_l,
+.m_t_l_b_r,
+.m_t_r_t_l,
+.m_t_r_b_l,
+.m_t_r_b_r{
+	box-sizing:border-box;
+	padding: 0 20px;
+	height: 292.5px;
+}
+.m_t_l_b_l{
+	background-color: #23AFD2;
+	color:#fff;
+}
+.m_t_r_b_l{
+	background-color: #E84C3D;
+	color:#fff;
+}
+.m_b_l{
+	position: relative;
+}
+.m_b_l>div{
+	position: absolute;
+	left:20px;
+	bottom: 30px;
+	display: block;
+}
+.m_b_l>div>p{
+	float: left;
+}
+.m_b_l>div>span{
+	float: right;
+	text-transform: uppercase;
+	color: #fff;
+}

@@ -1,11 +1,81 @@
-.who_are article{
-	margin-bottom: 1em;
+/*main top*/
+.top{
+	background: #fff;
 }
-.who_are article h3{
-	font-size: 1.5em;
-	text-align: center;
-	margin-bottom: 1em;
+.m_t_l{
+	background:#fff;
+	box-sizing:border-box;
+	padding: 60px 40px;
+	height: 664px;
 }
-.who_are article p,.who_are article ul{
-	text-indent: 2em;
+.m_t_l h2{
+	color: #000;
+	margin-bottom: 10px;
+	line-height: 1.2;
+}
+.m_t_l h2 span{
+	color: #E84C3D;
+}
+.m_t_l p{
+	line-height: 2;
+	color: #b0b0b0;
+}
+.m_t_l p span{
+	color: #23AFD2;
+}
+.m_t_l li{
+	list-style-type: none;
+	margin-left: 20px;
+	color:#b0b0b0;
+}
+.m_t_l a{
+	display: inline-block;
+	background: #E84C3D;
+	color: #fff; 
+	font-size: 14px;
+	padding: 10px 20px;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+.m_t_r_b{
+	position: relative;
+	top: -
+}
+.m_t_r_b_l{
+	background: #F3F1F1;
+	color: #333;
+	height: 224px;
+	box-sizing:border-box;
+	padding: 0 30px;
+}
+
+.m_b_l{
+	background: url(../img/about-3.jpg) no-repeat center;
+	height: 224px;
+}
+.m_b_l>div{
+	background: rgba(0,0,0,0.2);
+	height: 100%;
+	position: relative;
+}
+.m_b_l>div>a{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.m_b_l>div>p{
+	position: absolute;
+	bottom: 20px;
+	left: 30px;
+	text-transform: uppercase;
+	color: #E84C3D;
+}
+.m_b_l span{
+	color: #fff;
+}
+.m_b_r_r{
+	background: #fff;
+	height: 224px;
+	box-sizing:border-box;
+	padding: 0 30px;
 }

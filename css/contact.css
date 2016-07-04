@@ -1,28 +1,56 @@
-.contact-content{
-	margin-bottom: 2em;
+/*main*/
+.main div{
+	box-sizing:border-box;
 }
-.contact_left{
-	border-right:1px solid #000; 
+.m_l_t,.m_r_b{
+	height: 670px;
 }
-.contact_left h3,.contact_right h3{
-	font-size: 1.5em;
-	margin-bottom: 1em;
+.m_l_b,.m_r_t{
+	height: 211px;
 }
-.form_details input[type="text"], .form_details textarea {
-	margin: 10px 0px 0;
-	display: block;
-	width: 90%;
+.m_l_b_l{
+	background: #E84C3D;
 }
-.form_details input[type="submit"] {
-	margin-top: 10px;
+.m_l_b_r,.m_r_t_l{
+	background: #fff;
+	padding: 0 30px;
 }
-.contact_right li{
-	padding:0.5em 0;
+.m_r_t_r{
+	background: url(../img/contact.jpg) no-repeat center;
 }
+.m_r_t_r>div{
+	background: rgba(76, 219, 255, 0.55);
+	height: 100%;
+	padding: 30px;
+}
+.m_r_b{
+	padding: 0 100px;
+	background: #363636;
+	display: flex;
+	align-items:center;
+}
+.m_r_b>form{
+	width: 100%;
+}
+.m_r_b div{
+	width: 100%;
+	margin-bottom: 15px;
 
-#dituContent{
-	max-width:930px;
-	height:480px;
-	border:#ccc solid 1px;
-	margin: 0 auto;
+}
+.m_r_b input,.m_r_b textarea,.m_r_b button{
+	width: 100%;
+	display: block;
+	box-sizing:border-box;
+}
+.m_r_b input,.m_r_b textarea{
+	padding: 6px 12px;
+	background: transparent;
+	border-color: #7A7A7A 1px solid;
+}
+.m_r_b button{
+	background: #23AFD2;
+	border: 0;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 6px;
 }

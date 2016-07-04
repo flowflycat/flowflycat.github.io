@@ -1,15 +1,14 @@
-body{	
-	font-size:14px;
-	line-height:25px;
-	color:#000;
-	height:100%;
-	background:url(../images/body-tail.gif) center top repeat #e7e7e7;
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans",sans-serif;
+}
+body{
+	background:#1d1d1d;
 }
 .clearfix:before,.clearfix:after{
 	content: "";
 	display: table;
-	height: 0;
-	line-height: 0;
 }
 .clearfix:after{
 	clear: both;
@@ -17,42 +16,101 @@ body{
 .clearfix{
 	*zoom:1;
 }
-.container{
-	max-width: 1170px;
+.clearfix>div{
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+header,.main,footer{
+	width: 1170px;
 	margin: 0 auto;
+	position: relative;
 }
-header{
-	border-bottom: 1px solid #e3e3e3;
-	padding: 1em 0;
-	margin-bottom: 2em;
+img{
+	width: 100%;
+	height: 100%;
+	display: block;
 }
-header ul li{
+a{
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5{
+	font-weight: 300;
+}
+h2,h3{
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 400;
+}
+/*header*/
+header>a{
 	display: inline-block;
-	padding: 1em 1.5em;
-	width: 15%;
-	text-align: center;
-	margin: 0;
+	background: #E84C3D;
+	color: #fff; 
+	font-size: 40px;
+	padding: 15px 55px;
 }
-header ul li a{
-	font-size: 1.5em;
-	color: #898989;
+header>nav{
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }
-header ul li.active a,header ul li:hover a{
-	color: #fe3434;
+header li{
+	float: left;
+	list-style: none;
+}
+header li a{
+	display: inline-block;
+	background: #23AFD2;
+	color: #fff;
+	font-size: 14px;
+	padding: 18px 50px;
+	text-transform: uppercase;
+}
+header li a:hover,header li a.active{
+	background: #189FC3;
+}
+/*.banner*/
+.banner{
+	max-width: 1460px;
+	margin: 0 auto;
+	position: relative;
+	height: 553px;
+}
+.banner>div{
+	position: absolute;
+	background: #E84C3D;
+	display: inline-block;
+	padding: 20px 30px;
+	text-transform: uppercase;
+	bottom: 0;
+	left:145px;
+	color: #fff;
 }
 
+
+/*footer*/
 footer{
-	background: #242424;
-	padding: 2em 0;
-	margin-top: 1em;
+	height: 100px;
+	color: #fff;
 }
-footer .copyright{
-	color: #ffffff;
+.f_l{
+	display: table;
+	height: 100%;
+}
+.f_l p{
+	display: table-cell;
+	vertical-align: middle;
 	text-align: center;
 }
-.main h3{
-	text-align: center;
-	font-size: 2.5em;
-	color: #00598e;
-	margin-bottom: 1em;
+.f_r{
+	background: #23AFD2;
+	height: 100%;
+	box-sizing:border-box;
+	padding: 20px 30px;
+
+}
+.f_r p{
+	color: #06596e;
+	text-transform: uppercase;
 }

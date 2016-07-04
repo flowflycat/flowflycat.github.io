@@ -1,150 +1,111 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>金色晚年</title>
-	<link rel="shortcut icon" href="images/logo-ico.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<meta charset="utf8">
+	<title></title>
+	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<link rel="stylesheet" type="text/css" href="css/responsiveslides.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-	<script type="text/javascript" src="js/responsiveslides.js"></script>
-	<script type="text/javascript" src></script>
-	<script>
-		$(function () {
-		  $("#slider").responsiveSlides({
-			auto: true,
-			pager: true,
-			nav: true,
-			speed: 500,
-			maxwidth: 1170,
-			namespace: "centered-btns"
-		  });
-		});
-	</script>
 </head>
 <body>
-	<header>
-		<div class="container">
-			<div class="logo">
-				<a href="index.html">
-					<img src="images/logo.png" title="logo" />
-				</a>
-			</div>
-			<nav class="navigation">
-					<ul class="navbar">
-					  <li class="active"><a href="index.html">首页</li>
-					  <li><a href="about.html">关于我们</a></li>
-					  <li><a href="news.html">资讯动态</a></li>
-					  <li><a href="projects.html">产品中心</a></li>
-					  <li><a href="contact.html">联系我们</a></li>
-					</ul>	
-			</nav>
-		</div>	
-	</header>
-	<div class="banner">
-		<div class="container">
-			<div class="row-bot">
-				<div class="slider zerogrid">
-			   	<div class="rslides_container">
-						<ul class="rslides" id="slider">
-							<li><img src="images/banner-img1.jpg" alt="" /></li>
-							<li><img src="images/banner-img2.jpg" alt="" /></li>
-							<li><img src="images/banner-img3.jpg" alt="" /></li>
-						</ul>
+ 	<header>
+ 		<a>Metro City</a>
+		<nav>
+	 		<ul>
+	 			<li><a href="index.html" class="active">home</a></li>
+	 			<li><a href="about.html">about</a></li>
+	 			<li><a href="features.html">features</a></li>
+	 			<li><a href="contact.html">contact</a></li>
+	 		</ul>
+	 	</nav>
+ 	</header>
+ 	<div class="banner">
+ 		<img src="img/banner-1.jpg">
+ 		<div>
+ 			<h2>creative design agency</h2>
+ 			<p>lorem ipsum proin gravida</p>
+ 		</div>
+ 	</div>
+ 	<div class="main clearfix">
+ 		<div class="main_left">
+ 			<div class="m_l_1 clearfix">
+ 				<div class="m_l_1_l">
+ 					<div class="m_link">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-rss"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
 					</div>
-			   </div>
-		  </div>
-		</div>
-	</div>
-
-	<div class="function">
-		<div class="container">
-			<div class="fn fn-1 clearfix">
-				<img class="col-md-6" src="images/pr-114.jpg">
-				<div class="col-md-6">
-					<h3>114专属人工服务</h3>
-					<p>独有114金色晚年专线专席服务平台，专为老人提供服务</p>
-				</div>
-			</div>
-
-			<div class="fn fn-2 clearfix">
-				<div class="col-md-6">
-					<h3>实时定位 · 电子围栏 · 轨迹回访</h3>
-					<p>智能手表终端具有GPS定位功能，客服中心人员通过平台可实现"实时定位"，监护人可通过智能手机实时掌握监控对象所在位置，为监护对象的安全提供多重保障。</p>
-					<p>通过历史轨迹功能可以查询在一段时间内用户的活动轨迹，方便迅速得到他们的活动信息，有效解决老人的走失问题。</p>
-					<p>监护人可在手机端设立使用者的活动范围，当其活动范围超出设定时，系统会语音提示使用者并告知监护人，让监护人真正做到"防""护"无忧，确保使用者的出行安全。</p>
-				</div>
-				<img class="col-md-6" src="images/demo.jpg">
-			</div>
-			<div class="fn fn-3 clearfix">
-				<img class="col-md-6" src="images/pr-woyu.jpg">
-				<div class="col-md-6">
-					<h3>联通云平台，保护您的资料</h3>
-					<p>深度整合中国联通云平台，产品采用联通后台作数据存储及交互，使用更安全、沟通更畅快，充分杜绝个人信息数据泄漏！</p>
-				</div>
-			</div>
-			<div class="fn fn-4 clearfix">
-				<div class="col-md-6" >
-					<h3>一键SOS</h3>
-					<p>当终端使用老人发生医疗、火灾、盗窃等紧急情况时可长按SOS键实现"一键呼救"，系统将自动向预设好的联系人电话发送求救信号，并将地理位置信息实时传送到手机端，针对突发意外实现全方位守护。</p>
-				</div>
-				<img class="col-md-6" src="images/pr-4.jpg">
-			</div>
-			
-		</div>	  	
-	</div>
-	<div class="details">
-		<div class="container clearfix">
-			<div class="de de-company col-md-4">
-				<h3>公司动态</h3>
-				<ul>
-					<li><a href="news/new20160628.html">“孝行天下 关爱老人” 老人专属智能腕表在京发布</a></li>
-					<li><a href="news/new20160628.html">“孝行天下 关爱老人” 老人专属智能腕表在京发布</a></li>
-					<li><a href="news/new20160628.html">“孝行天下 关爱老人” 老人专属智能腕表在京发布</a></li>
-					<li><a href="news/new20160628.html">“孝行天下 关爱老人” 老人专属智能腕表在京发布</a></li>
-					<li><a href="news/new20160628.html">“孝行天下 关爱老人” 老人专属智能腕表在京发布</a></li>
-				</ul>
-				<a href="new.html">了解更多 ></a>
-			</div>
-			<div class="de de-industry col-md-4">
-				<h3>行业动态</h3>
-				<ul>
-					<li><a href="#">上海“智慧养老”模式获多地“复制”</a></li>
-					<li><a href="#">老龄化烦恼如何消除?</a></li>
-					<li><a href="#">习近平：推动老龄事业全面协调可持续发展</a></li>
-					<li><a href="#">民政部等四部门发文：关注老年人意外伤害</a></li>
-					<li><a href="#">第五届中国国际养老服务业博览会今日在京开幕</a></li>
-				</ul>
-				<a href="new.html">了解更多 ></a>
-			</div>
-			<div class="de de-contact col-md-4">
-				<h3>联系我们</h3>
-				<ul>
-					<li>地址 ：北京市丰台区开阳路8号9层A901-1</li>
-					<li>邮编 ：100069</li>
-					<li>电话 ：(010) 6348 6655</li>
-					<li>邮箱 ：<a href="mailto:info@example.com">mail</a></li>
-					<li>其他联系方式 ：<a href="#" onclick="js_method();return false;">微信</a><a href="#" onclick="js_method();return false;">微博</a>
-					</li>
-				</ul>
-				<a href="contact.html">了解更多 ></a>
-			</div>
-		</div>
-	</div>
-	<!--在线咨询模块，暂未开发
-	<aside class="advice">
-	</aside>
-	-->
-	<footer>
-		<div class="container">
-			<div class="copyright">
-				<img src="images/logo.png">
-				<p>©2016 金色晚年（北京）科技产业有限公司 All Rights Reserved.</p>
-			</div>
-		</div>
-	</footer>	
+ 					<h2>duis sedio sitam elit class</h2>
+ 					<p>Morbi accumsan ipsum velamso nec tellus roin ...</p>
+ 				</div>
+ 				<div class="m_l_1_r">
+ 					<i></i>
+ 					<img class="image" src="img/home-1.jpg">
+ 				</div>
+ 			</div>
+ 			<div class="m_l_2">
+ 				<div>
+ 					<p>Ribendum elit conseqt ipsum sagittis nibh</p>
+ 				</div>
+ 				<img class="image" src="img/home-3.jpg">
+ 			</div>
+ 			<div class="m_l_3 clearfix">
+ 				<div class="m_l_3_l">
+ 					<div class="m_link">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-rss"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+					</div>
+ 					<h2>lorem ipsum do elit class</h2>
+ 					<p>By:David Hanson</p>
+ 				</div>
+ 				<div class="m_l_3_r">
+ 					<img class="image" src="img/home-5.jpg">
+ 				</div>
+ 			</div>
+ 		</div>
+ 		<div class="main_right">
+ 			<div class="m_r_1">
+ 				<div>
+ 					<p>Ribendum elit conseqt ipsum sagittis nibh</p>
+ 				</div>
+ 				<img class="image" src="img/home-2.jpg">
+ 			</div>
+ 			<div class="m_r_2 clearfix">
+ 				<div class="m_r_2_l">
+ 					<div class="m_link">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-rss"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+					</div>
+ 					<h2>Lorem Ipsum Elit Conseaut Odiosi</h2>
+ 						<p>This is free responsive layout from templatemo. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis odio sit amet nibh vulputate cursus.</p>
+ 					<a href="#">learn more</a>
+ 				</div>
+ 				<div class="m_r_2_r">
+ 					<div class="m_r_2_r_t">
+ 						<img class="image" src="img/home-4.jpg">
+ 					</div>
+ 					<div class="m_r_2_r_b">
+ 						<h2>Lorem Ipsumdol Elit Class</h2>
+ 						<a href="#">learn more</a>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<div></div>
+ 	<footer class="clearfix">
+ 		<div class="f_l">
+ 			<p>Copyright 2084 Metro City|More Templates</p>
+ 		</div>
+ 		<div class="f_r">
+ 			<h2>design with happiness</h2>
+ 			<p>lorm ipsum proin gravida</p>
+ 		</div>
+ 	</footer>
 </body>
-</html>		
+</html>
