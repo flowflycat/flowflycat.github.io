@@ -1,0 +1,30 @@
+div.container{
+	width: 90%;
+	padding: 20px;
+	margin: 0 auto;
+	background: #eee;
+	border: 1px #999 solid;		
+	overflow: hidden;
+}
+div{
+	background: #fff;
+	padding: 20px;
+}
+.team_name{
+	width: 200px;
+	float: left;
+}
+.team_name img{
+	float: left;
+}
+.team_info{
+
+}
+.team_members{
+	width: 120px;
+	float: right;
+}
+img{
+	width: 80px;
+	height: 80px;
+}

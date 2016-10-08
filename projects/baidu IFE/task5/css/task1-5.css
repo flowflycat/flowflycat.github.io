@@ -1,0 +1,134 @@
+/*页面整体*/
+html{
+	background:#222;
+	margin: 0;
+	padding: 0;
+	font-family: 微软雅黑;
+}
+body{
+	background: #dedede;
+	margin: 0 auto;
+	max-width: 1282px;
+}
+
+/*页眉*/
+header{
+	background: #333;
+	overflow: hidden;
+	width: 100%;
+	
+}
+header h1{
+	float: left;
+	margin-left: 21px;
+}
+header nav{
+	float: right;
+	margin-right: 22px;
+	margin-top: 20px;/*为使导航达到垂直居中效果暂时使用，并不稳妥*/
+}
+header li{
+	display: inline;
+}
+header li a{
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+}
+
+/*页面主体*/
+div#container{
+	position: relative;
+}
+div.main{
+	margin-right:423px; 
+}
+article,section{
+	margin: 20px;
+	background: #fff;
+	padding: 40px 20px;
+	border-left: 1px #cbcbcb solid;
+	border-top: 1px #cbcbcb solid;
+	border-right: 2px #848484 solid;
+	border-bottom: 2px #848484 solid;
+}
+img{
+	border:1px #cbcbcb solid;
+	width: 300px;
+	height: 179px;
+}
+article h2{
+	color: #888;
+}
+article span{
+	color: #888;
+}
+.active a{
+	color: #666;
+}
+section {
+	overflow: hidden;
+}
+section div{
+	float: left;
+	margin: 10px;
+	border:1px #eee solid;
+	text-align: center;
+}
+/*表格css*/
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+table thead{
+	background: #000;
+	color: #fff;
+}
+table thead th{
+	text-align: left;
+}
+table tbody tr.tr_last{
+	background: #888;
+	font-weight: bold;
+}
+
+/*侧边栏*/
+aside  {
+	position: absolute;
+	width: 360px;
+	top:0;
+	right: 0;
+	background: #fff;
+	padding: 40px 20px;
+	margin-right:20px; 
+	border-left: 1px #cbcbcb solid;
+	border-top: 1px #cbcbcb solid;
+	border-right: 2px #848484 solid;
+	border-bottom: 2px #848484 solid;
+}
+aside div{
+	margin-left: 10%;
+}
+aside input.input_submit {
+	display: block;
+	background: #3355d0;
+	color: #fff;
+	padding: 5px;
+	border: 1px solid #3355d0;
+	border-radius: 5px;
+	width: 100%;
+}
+aside span{
+	color: #888;
+}
+
+/*页脚*/
+footer{
+	background: #000;
+	color: #fff;
+	padding-top: 20px ;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}

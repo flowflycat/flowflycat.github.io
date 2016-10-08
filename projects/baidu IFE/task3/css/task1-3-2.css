@@ -1,0 +1,33 @@
+section,div{
+	padding: 20px;
+	background: #eee;
+	border: 1px #999 solid;	
+}
+section{	
+	overflow: visible;
+	position: relative;
+}
+.team_name{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px;
+}
+.team_name img{
+	float: left;
+}	
+.team_info{
+	margin-left:240px;
+	margin-right: 160px;
+}
+.team_members{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 120px;
+	
+}
+img{
+	width: 80px;
+	height: 80px;
+}

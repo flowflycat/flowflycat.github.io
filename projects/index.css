@@ -1,0 +1,79 @@
+/*全局设置*/
+html body{
+	margin: 0;
+	padding:0;
+}
+body{
+	background: #ededef;
+	font-family: "微软雅黑";
+	height: 100%;
+}
+
+/*解决子模块float后父元素塌陷问题*/
+.clearfix:after{
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/*主体包含块*/
+.container{
+	background: #eee;
+	padding: 20px;
+	overflow: hidden;
+	min-width: 550px;
+	min-height: 100%;
+}
+
+
+.team_name{
+	width: 200px;
+	background: #fff;
+	border: inherit;
+	float: left;
+}
+.team_name img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin: 20px;
+	border: 1px solid #999;
+}
+.team_name span{
+	font-weight: bold;
+	display: block;
+	margin-top: 20px;
+	
+}
+
+
+.team_members{
+	width: 120px;
+	float: right;
+}
+
+
+.team_info{
+	padding:20px;
+	border-left:1px #eee solid;
+	border-top:1px #eee solid;
+	border-right:2px #999 solid;
+	border-bottom: 2px #999 solid;
+	margin-left: 220px;
+	margin-right: 140px;
+	background: #fff;
+}
+
+footer{
+	background: #000000;
+	color: #ffffff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+footer p{
+	text-align: center;
+}

@@ -1,0 +1,36 @@
+html,body{
+	margin: 0;
+	padding:0;
+	height: 100%;
+}
+div.container{
+	height:100%;
+	position: relative;
+}
+div.main{
+	background: #ccc;
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-left:-200px;
+	margin-top:-100px; 
+	overflow: hidden;
+}
+.circle_left,.circle_right{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background: #fc0;
+}
+.circle_left{
+	position: relative;
+	right: 50px;
+	bottom: 50px;
+}
+.circle_right{
+	position: relative;
+	top:50px;
+	left: 350px;
+}

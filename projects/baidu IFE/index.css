@@ -1,0 +1,93 @@
+/*全局设置*/
+html body{
+  margin: 0;
+  padding:0;
+}
+body{
+  background: #ededef;
+  font-family: "微软雅黑";
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+/*解决子模块float后父元素塌陷问题*/
+.clearfix:after{
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/*主体包含块*/
+.container{
+  background: #eee;
+  padding: 20px;
+  overflow: hidden;
+  min-width: 550px;
+  min-height: 100%;
+}
+
+
+.content_name{
+  width: 200px;
+  background: #fff;
+  border: 1px solid #eee;
+  float: left;
+}
+.content_name a{
+  display: block;
+  padding: 20px;
+}
+.content_name img{
+  width: 80px;
+  height: 80px;
+  float: left;
+  border: 1px solid #999;
+}
+.content_name span{
+  font-weight: bold;
+  float: right;
+}
+
+.content_members{
+  width: 120px;
+  float: right;
+}
+
+
+.content_info{
+  padding:20px;
+  border-left:1px #eee solid;
+  border-top:1px #eee solid;
+  border-right:2px #999 solid;
+  border-bottom: 2px #999 solid;
+  margin-left: 220px;
+  margin-right: 140px;
+  background: #fff;
+}
+
+.content_info a{
+  display: inline-block;
+  padding: 0.5em 1em;
+  min-width: 220px;
+}
+.content_info a:hover{
+  color: #ffffff;
+  background: #0a8cd2;
+}
+footer{
+  background: #000000;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+footer p{
+  text-align: center;
+}
