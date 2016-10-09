@@ -1,10 +1,102 @@
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+/*样式重置*/
+
+body,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
 }
 
-html{
-	font-size: 16px;
-	font-family: "微软雅黑","华文细黑",sans-serif;
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*清除浮动*/
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+html {
+  font-size: 16px;
+  font-family: "微软雅黑", "华文细黑", sans-serif;
+  background: #986DB2;
+}
+
+header li {
+  float: left;
+}
+
+header a {
+  display: inline-block;
+  padding: 1em 1.5em;
+  background: transparent;
+  color: #cccccc;
+  font-weight: bold;
+}
+
+header a:first-letter {
+  text-transform: uppercase;
+}
+
+header a:hover {
+  color: #ffffff;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: transparent;
+  color: #ffffff;
+}
+
+footer p {
+  text-align: center;
+  line-height: 4;
 }

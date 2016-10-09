@@ -1,0 +1,735 @@
+html,
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+select,
+input,
+table,
+tr,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  font: 12px/12px "微软雅黑";
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+/*头部部分*/
+
+header {
+  background: #2189bf;
+  padding: 10px 70px 10px 50px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header .logo {
+  float: left;
+}
+
+header .header-right {
+  float: right;
+  padding-top: 4px;
+}
+
+header .search {
+  float: left;
+  position: relative;
+  margin-right: 20px;
+}
+
+.search input {
+  width: 312px;
+  height: 28px;
+  border-radius: 14px;
+  border: none;
+}
+
+.search img {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+}
+
+header .login {
+  float: right;
+  padding-top: 6px;
+}
+
+header .login img,
+header .login span {
+ vertical-align: middle;
+}
+
+.login span {
+  color: #ffffff;
+}
+
+
+/*内容部分*/
+
+.content {
+  background: #2a303d;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+
+/*左边栏部分*/
+
+.content-left {
+  float: left;
+  width: 260px;
+  height: 100%;
+}
+
+
+/*侧边栏头部组件*/
+
+.m-cl-head {
+  padding-left: 50px;
+  margin-bottom: 1.5em;
+}
+
+.m-clh-logo {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+
+/**/
+
+.m-clh-logo-circle {
+  float: left;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  background: transparent;
+  padding: 3px;
+}
+
+.m-clh-logo-circle > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #b8bbbd;
+}
+
+.m-clh-logo>span {
+  margin-left: 18px;
+  display: inline-block;
+  color: #ffffff;
+  line-height: 60px;
+}
+
+.m-clh-data>div {
+  float: left;
+  color: #66798a;
+}
+
+.m-clh-data-collection {
+  width: 70px;
+  text-align: center;
+  border-right: 2px solid #313645;
+}
+
+.m-clh-data-fans {
+  padding-left: 32px;
+}
+
+.m-cl-navbar li.navbar-li {
+  padding-left: 50px;
+}
+
+.m-cl-navbar li.hover,
+.m-cl-navbar li:hover {
+  background: #373d4c;
+}
+
+.m-cl-navbar a {
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.m-cl-navbar span {
+  color: #66798a;
+  display: inline-block;
+}
+
+.m-cl-navbar .open span {
+  color: #ffffff;
+}
+
+.m-cl-navbar img {
+  margin-right: 1em;
+}
+
+.m-cl-navbar a.open + ul {
+  margin-left: 35px;
+}
+
+
+/*右侧主体部分*/
+
+.content-right {
+  float: left;
+  width: calc(100% - 260px);
+  background: #ededed;
+}
+
+
+/*主体头部*/
+
+.m-cr-head {
+  padding-left: 30px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: #aaaaaa;
+  background: #ffffff;
+}
+
+.m-cr-head > span {
+  color: #669a74;
+}
+
+
+/*主体内容*/
+
+.m-cr-content {
+  padding: 20px 70px 0 60px;
+  width: 1020px;
+}
+
+.m-cr-search {
+  background: #ffffff;
+  border-width: 1px 2px 2px 1px;
+  border-color: #dde0e0;
+  border-style: solid;
+  margin-bottom: 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.m-cr-search form>div {
+  float: left;
+  margin-left: 30px;
+}
+
+.m-cr-search form label {
+  color: #aaaaaa;
+  margin-right: 1em;
+}
+
+.m-cr-search form .u-form-select {
+  margin-bottom: 4px;
+}
+
+
+/**/
+
+.u-form-select {
+  border: 1px solid #cccccc;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+  padding-bottom: 0.5em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(img/black_arrow.png) no-repeat 90% 12px;
+}
+
+.u-form-select:focus {
+  background: url(img/blue_arrow.png) no-repeat 90% 12px;
+}
+
+.w120 {
+  width: 120px;
+}
+
+.w70 {
+  width: 70px;
+}
+
+.m-cr-search1>div {
+  float: left;
+}
+
+.m-cr-search-change {
+  position: relative;
+  top: 13px;
+}
+
+.m-cr-search-change span {
+  position: absolute;
+  right: 2px;
+  top: 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.m-cr-search3 .u-form-submit {
+  margin-top: 20px;
+}
+
+
+/*历史查询组件*/
+
+.m-cr-history {
+  margin-bottom: 20px;
+}
+
+.g-cr-history0,
+.g-cr-history,
+.g-cr-history1 {
+  float: left;
+  background: #ffffff;
+  border: 1px solid #dde0e0;
+  height: 64px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.g-cr-history0,
+.g-cr-history {
+  margin-right: 5px;
+}
+
+.g-cr-history {
+  width: 110px;
+  padding-top: 14px;
+}
+.g-cr-history span{
+  line-height: 1.5em;
+}
+.g-cr-history0 {
+  width: 30px;
+  line-height: 60px;
+}
+
+.g-cr-history1 {
+  width: 130px;
+  padding: 16px 18px;
+}
+
+.g-cr-history1>img {
+  float: left;
+}
+
+.g-cr-history1>span {
+  float: right;
+  line-height: 32px;
+}
+
+.m-cr-history .g-cr-history:hover {
+  border-top: 4px solid #4289c8;
+}
+
+.color-gray {
+  color: #333333;
+}
+
+.color-orange {
+  color: #ec6600;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+
+/*统计组件*/
+
+.m-cr-total {
+  margin-top: 6px;
+  margin-bottom: 12px;
+  margin-left: -30px;
+}
+
+.m-cr-total0 {
+  float: left;
+  width: 200px;
+  height: 72px;
+  border-top: 2px solid #d7dada;
+  border-right: 2px solid #d7dada;
+  border-bottom: 2px solid #d7dada;
+  border-radius: 2px;
+  margin-left: 30px;
+  background: #ffffff;
+  padding: 12px 16px 12px 10px;
+}
+
+.m-cr-total0>div {
+  float: left;
+}
+
+.m-cr-total0 .color-cr-total0 {
+  width: 60px;
+  height: 48px;
+  float: right;
+}
+
+.m-cr-total0-0 {
+  border-left: 4px solid #43b39e;
+}
+
+.m-cr-total0-1 {
+  border-left: 4px solid #398cc1;
+}
+
+.m-cr-total0-2 {
+  border-left: 4px solid #cf4c35;
+}
+
+.m-cr-total0-3 {
+  border-left: 4px solid #e1cf46;
+}
+
+.color-cr-total0-0 {
+  background: #43b39e;
+}
+
+.color-cr-total0-1 {
+  background: #398cc1;
+}
+
+.color-cr-total0-2 {
+  background: #cf4c35;
+}
+
+.color-cr-total0-3 {
+  background: #e1cf46;
+}
+
+.m-cr-firstTeam {
+  margin-bottom: 8px;
+}
+
+.m-cr-projectTable,
+.m-cr-projectInfo,
+.m-cr-calendar,
+.m-cr-car {
+  float: left;
+  background: #ffffff;
+  border: 1px solid #bfc3c9;
+  border-radius: 5px;
+  height: 358px;
+}
+
+.u-header {
+  background: #f3f6f6;
+  color: #b5b5b5;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+  border-radius: 5px 5px 0 0;
+}
+
+.m-cr-projectTable {
+  width: 532px;
+  margin-right: 8px;
+}
+
+.m-cr-projectTable .hide {
+  display: none;
+}
+
+.m-cr-projectTable .table-content {
+  padding: 20px;
+}
+
+.m-cr-projectTable .table-tag li {
+  display: inline-block;
+}
+
+.m-cr-projectTable .table-tag li a {
+  display: block;
+  background: #ededf0;
+  border-radius: 3px 3px 0 0;
+  color: #000000;
+  padding: 0.5em 2em;
+}
+
+.m-cr-projectTable .table-tag li.selected a {
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+  border-width: 1px 1px 0 1px;
+  border-style: solid;
+  border-color: #cbcbcb;
+  border-radius: 3px 3px 0 0;
+}
+
+.m-cr-projectTable .table-detail {
+  position: relative;
+  top: -1px;
+  border: 1px solid #cbcbcb;
+  border-radius: 0 3px 3px 3px;
+  padding: 28px 36px;
+  background: #ffffff;
+}
+
+.m-cr-projectTable .table-detail table {
+  border-collapse: collapse;
+}
+
+.m-cr-projectTable .table-detail td {
+  width: 100px;
+  height: 34px;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+.m-cr-projectTable .table-detail td:hover {
+  background: #f3f6f6;
+}
+
+
+/*项目组信息*/
+
+.m-cr-projectInfo {
+  width: 350px;
+}
+
+.m-projectInfo {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.m-projectInfo h4 {
+  color: #c3c3c3;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+
+.m-projectInfo p {
+  margin-bottom: 1em;
+}
+
+.m-projectInfo .m-projectInfo-0 {
+  margin-top: 1.2em;
+  padding-left: 1em;
+}
+
+.m-projectInfo .m-projectInfo-1 {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+.mp1-price,
+.mp1-leader {
+  float: left;
+  width: 50%;
+  text-indent: 1em;
+  padding-top: 0.5em;
+}
+
+.mp1-leader {
+  border-left: 1px solid #dddddd;
+}
+
+.m-projectInfo .m-projectInfo-2 {
+  text-indent: 1em;
+  height: 146px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.m-projectInfo .m-projectInfo-3 {}
+
+.m-projectInfo-4-0 {
+  float: left;
+  padding: 1em;
+}
+
+.m-projectInfo-4-0 .u-form-checkbox {
+  margin-right: 0.5em;
+}
+
+
+/**/
+
+.u-form-checkbox {
+  background: #cbcbcb;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.u-form-checkbox:checked {
+  background: #cbcbcb url(img/gou.png) no-repeat center center;
+}
+
+.m-projectInfo-4-1 {
+  float: right;
+  padding-top: 0.5em
+}
+
+.u-form-submit {
+  color: #ffffff;
+  background: #378bc0;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 3px;
+}
+
+
+/*日历*/
+
+.m-cr-calendar {
+  width: 352px;
+  margin-right: 8px;
+}
+
+.calendar-tag,
+.calendar-week {
+  padding: 10px 20px;
+}
+
+.m-cr-calendar table {
+  margin-left: 35px;
+}
+
+.calendar-week ul {
+  border-top: 2px solid #a8d0ec;
+  border-bottom: 2px solid #e1e1e1;
+  padding-left: 15px;
+}
+
+.calendar-week li {
+  float: left;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.calendar-date td {
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.calendar-date {
+  margin-top: 5px;
+}
+
+.calendar-date td:hover {
+  border: 1px solid #f5c21d;
+}
+
+.calendar-date td span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.calendar-date td span:nth-chid(2n) {
+  font-size: 16px;
+}
+
+.calendar-date .holiday,
+.calendar-date td:nth-child(7n) span:first-child,
+.calendar-date td:nth-child(7n+6) span:first-child {
+  color: #c61719;
+}
+
+.m-cr-car {
+  width: 530px;
+}
+
+.m-cr-car .m-car-content {
+  padding: 20px 40px 0 40px;
+}
+
+.m-car-content table {
+  border-collapse: collapse;
+}
+
+.m-car-content tbody tr:hover {
+  background: #f3f6f6;
+}
+
+.m-car-content table th,
+.m-car-content table td {
+  border: 1px solid #dddddd;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
+}
+
+.m-car-content table th:first-child,
+.m-car-content table td:first-child {
+  width: 70px;
+}
+
+.m-car-content table th:first-child + th,
+.m-car-content table td:first-child + td {
+  width: 90px;
+}
+
+.m-car-content table th:last-child,
+.m-car-content table td:last-child {
+  width: 290px;
+}
+
+.u-exponential-bar {
+  background: #dcdcdc;
+  width: 170px;
+  height: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.m-cr-bottom{
+  margin-bottom: 2em;
+}
