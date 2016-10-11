@@ -1,4 +1,5 @@
 /*表格*/
+
 th {
   color: #ffffff;
   background: #000000;
@@ -20,6 +21,7 @@ tbody tr:nth-child(3) td {
 
 
 /*输入框*/
+
 .m-input input {
   width: 6em;
   transition: width 1s;
@@ -30,24 +32,81 @@ tbody tr:nth-child(3) td {
 }
 
 /*轮播图*/
-
-ul {
-	list-style: none;
-	height: 100px;
-	width: 200px;
+.m-banner {
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #cccccc;
+  background: #ffffff;
 }
 
-li{
-	width: 0;
-	height: 100px;
-	transition: width 
+.m-sliders {
+  width: 600px;
+  height: 100px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  overflow: hidden;
+  list-style: none;
 }
-li:nth-child(1){
-	background: #ff0000;
+
+.m-sliders li {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100px;
 }
-li:nth-child(2){
-	background: #00ff00;
+
+li:nth-child(1) {
+  background: #ff0000;
 }
-li:nth-child(3){
-	background: #0000ff;
+
+li:nth-child(2) {
+  background: #00ff00;
+}
+
+li:nth-child(3) {
+  background: #0000ff;
+}
+
+/*添加动画效果*/
+.m-sliders li:target{
+  z-index:2;
+  animation: slider-in .5s linear;
+}
+
+/*按钮部分*/
+.m-btns {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.m-btns a{
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: #cccccc;
+  text-decoration: none;
+}
+
+
+
+/*动画关键帧部分*/
+@keyframes slider-in {
+  0%{
+    left: -100%;
+  }
+  100%{
+    left: 0;
+  }
+}
+@keyframes slider-out{
+  0%{
+    left:0;
+  }
+  100%{
+    left: -100%;
+  }
 }
