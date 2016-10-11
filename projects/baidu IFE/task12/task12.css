@@ -1,0 +1,53 @@
+/*表格*/
+th {
+  color: #ffffff;
+  background: #000000;
+}
+
+tbody tr:nth-child(2n+1) {
+  background: #ffffff;
+}
+
+tbody tr:nth-child(2n) {
+  background: #aaaaaa;
+}
+
+tbody tr:nth-child(1) td,
+tbody tr:nth-child(2) td,
+tbody tr:nth-child(3) td {
+  color: #ff0000;
+}
+
+
+/*输入框*/
+.m-input input {
+  width: 6em;
+  transition: width 1s;
+}
+
+.m-input input:focus {
+  width: 12em;
+}
+
+/*轮播图*/
+
+ul {
+	list-style: none;
+	height: 100px;
+	width: 200px;
+}
+
+li{
+	width: 0;
+	height: 100px;
+	transition: width 
+}
+li:nth-child(1){
+	background: #ff0000;
+}
+li:nth-child(2){
+	background: #00ff00;
+}
+li:nth-child(3){
+	background: #0000ff;
+}

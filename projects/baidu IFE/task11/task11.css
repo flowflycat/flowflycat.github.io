@@ -1,0 +1,36 @@
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+html{
+	font-size: 100px;
+}
+h2{
+	font-size: ;
+}
+
+ul{
+	list-style: none;
+}
+li{
+	float: left;
+}
+a{
+	text-decoration: none;
+}
+
+.m-title{
+	background: #91d6d9;
+	color: #ffffff;
+}
