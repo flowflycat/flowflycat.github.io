@@ -1,0 +1,105 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Task 15</title>
+  </head>
+<body>
+  <ul id="source">
+    <li>北京空气质量：<b>90</b></li>
+    <li>上海空气质量：<b>70</b></li>
+    <li>天津空气质量：<b>80</b></li>
+    <li>广州空气质量：<b>50</b></li>
+    <li>深圳空气质量：<b>40</b></li>
+    <li>福州空气质量：<b>32</b></li>
+    <li>成都空气质量：<b>90</b></li>
+  </ul>
+  <button id="sort-btn">排序</button>
+  <ul id="resort">
+    <!-- 
+    <li>第一名：北京空气质量：<b>90</b></li>
+    <li>第二名：北京空气质量：<b>90</b></li>
+    <li>第三名：北京空气质量：<b>90</b></li>
+     -->
+  </ul>
+<script type="text/javascript">
+(function(){
+  //将DOM操作放在一起，提升效率
+  var source = document.querySelector('#source');
+  var oList = source.querySelectorAll('li');
+  var resort = document.querySelector('#resort');
+  var oBtn = document.querySelector('#sort-btn');
+
+//此部分为首次作出，后发现太繁琐，更新为版本2
+//function getData() {
+//  var oStr;
+//  var data = [];
+//  for (i=0,len=oList.length;i<len;i++) {
+//    oStr=oList[i].innerHTML;
+//    var items = [];
+//    items[0] = oStr.substring(oStr.length-14,0);
+//    items[1] = oStr.substr(oStr.length-6,2);
+//    data.push(items);
+//  }
+//  return data;
+//}
+
+//此部分为版本2
+function getData() {
+  var data = [];
+  for (i=0,len=oList.length;i<len;i++) {
+    var items=oList[i].innerText.split("：");
+    data.push(items);
+  }
+  return data;
+}
+
+//排序模块
+function sortAqiData(data) {
+  data.sort(compare);
+  function compare(a,b){
+    return a[1]-b[1];
+  }
+  return data;
+}
+
+//渲染模块，版本1
+//function render(data) {
+//  resort.innerHTML = "";
+//  var sortlist = ["一","二","三","四","五","六","七"]
+//  var oUl = document.createElement('ul');
+//  for (i=0,len=data.length;i<len; i++) {
+//    var oLi = document.createElement("li");
+//    oLi.innerHTML = "第"+sortlist[i]+"名："+data[i][0]+"：<b>"+data[i][1]+"</b>";
+//    oUl.appendChild(oLi);
+//  }
+//  resort.appendChild(oUl);
+//}
+
+//渲染模块，版本2
+function render(data) {
+  var sortlist = ["一","二","三","四","五","六","七"]
+  var oLi ="";
+   for (i=0,len=data.length;i<len; i++) {
+    oLi += "<li>第"+sortlist[i]+"名："+data[i][0]+"空气质量：<b>"+data[i][1]+"</b></li>";
+  }
+  resort.innerHTML = oLi;
+}
+
+
+function btnHandle() {
+  var aqiData = getData();
+  aqiData = sortAqiData(aqiData);
+  render(aqiData);
+}
+
+function init() {
+  // 在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数
+  oBtn.addEventListener("click",btnHandle);
+}
+
+init();
+})()
+</script>
+</body>
+</html>

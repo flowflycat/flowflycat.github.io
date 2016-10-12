@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>圆环结</title>
+  <script src="three.js"></script>
+  <script type="text/javascript">
+    function init(){
+      var camera = new THREE.OrthographicCamera(-8,8,6,-6,1,10);
+      camera.position.set(5,5,5);
+      camera.lookAt(new THREE.Vector3(0,0,0));
+
+      var renderer2 = new THREE.WebGLRenderer({
+        canvas:document.getElementById('mainCanvas2')
+      })
+      renderer2.setClearColor(0x000000);
+
+      var scene2 = new THREE.Scene();
+      scene2.add(camera);
+
+      var torusKnot = new THREE.Mesh(new THREE.TorusKnotGeometry(2,2.5,32,8),new THREE.MeshBasicMaterial({
+        color:0x0000ff,
+        wireframe:true
+      }));
+      scene2.add(torusKnot);
+
+      renderer2.render(scene2,camera); 
+    }
+  </script>
+</head>
+<body onload="init()">
+<h2>圆环结</h2>
+<canvas id="mainCanvas2" style="width: 400px;height: 300px"></canvas>
+</body>
+</html>
