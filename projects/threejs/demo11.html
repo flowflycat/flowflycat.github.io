@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>文字形状</title>
+	<script type="text/javascript" src="three.js"></script>
+	<script type="text/javascript">
+	window.onload = function () {	
+		var renderer = new THREE.WebGLRenderer({
+			canvas:document.getElementById('mainCanvas')
+		});
+		renderer.setClearColor(0x000000);
+
+		var scene = new THREE.Scene();
+
+		var camera = new THREE.OrthographicCamera(-4,4,3,-3,1,10);
+		camera.position.set(5,5,5);
+		camera.lookAt(new THREE.Vector3(0,0,0));
+		scene.add(camera);
+		var material = new THREE.MeshBasicMaterial({
+			color:0x00ff00,
+			wireframe:true
+		})
+		var loader = new THREE.FontLoader();
+		loader.load('helvetiker_regular.typeface.json',function(font){
+			var mesh = new THREE.Mesh(new THREE.TextGeometry('HelloWorld',{
+				font:font,
+				size:1,
+				height:1
+			}),material);
+			scene.add(mesh);
+
+			renderer.render(scene,camera);
+		})
+	}
+	</script>
+</head>
+<body>
+<canvas id="mainCanvas" style="width: 400px;height: 300px;"></canvas>
+</body>
+</html>
