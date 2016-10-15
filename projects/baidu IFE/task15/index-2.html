@@ -25,7 +25,8 @@
 <script type="text/javascript">
 function getData() {
   var data = [];
-  var oList = document.querySelectorAll('li');
+  var source = document.querySelector('#source');
+  var oList = source.querySelectorAll('li');
   for (i=0,len=oList.length;i<len;i++) {
     var items=oList[i].innerText.split("：");
     data.push(items);

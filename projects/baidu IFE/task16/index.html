@@ -2,14 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>IFE JavaScript Task 16</title>
+    <title>Task 16</title>
+    <style type="text/css">
+      table {
+        border-collapse: collapse;
+        margin: 10px;
+      }
+      table td{
+        border: 1px solid #000000;
+        padding: 0.5em 1em;
+      }
+    </style>
   </head>
 <body>
 
   <div>
     <label>城市名称：<input id="aqi-city-input" type="text"></label><br>
     <label>空气质量指数：<input id="aqi-value-input" type="text"></label><br>
-    <button id="add-btn">确认添加</button><span id="warn-info"></span>
+    <button id="add-btn">确认添加</button>
+    <p id="warn-info"></p>
   </div>
   <table id="aqi-table">
   <!-- 
@@ -24,6 +35,6 @@
     </tr>
    -->
   </table>
-  <script src="task2-16.js"></script>
+  <script src="task16.js"></script>
 </body>
 </html>

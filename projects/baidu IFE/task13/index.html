@@ -14,17 +14,20 @@
 <script type="text/javascript">
 
 (function() {
-  /*  
-  在注释下方写下代码
-  给按钮button绑定一个点击事件
-  在事件处理函数中
-  获取aqi-input输入的值，并显示在aqi-display中
-  */
-  var input = document.getElementById('aqi-input');/*通过id获取input元素*/
-  var btn = document.getElementById('button');/*通过id获取button元素*/
-  var display = document.getElementById('aqi-display');/*通过id获取span元素*/
+  /*通过id获取input元素*/
+  var input = document.getElementById('aqi-input');
+  /*通过id获取button元素*/
+  var btn = document.getElementById('button');
+  /*通过id获取span元素*/
+  var display = document.getElementById('aqi-display');
   btn.onclick = function(){
-    display.innerHTML=input.value;
+  	var num = parseInt(input.value);
+  	if (!isNaN(num) && (num >=0) &&(num<=1000) ) {
+  		 display.innerHTML = num;
+  	} else {
+  		alert(input.value + "不是有效的AQI数值，请重新输入");
+  	}
+   	
   }
 })();
 
