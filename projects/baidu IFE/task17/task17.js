@@ -59,11 +59,11 @@ function renderChart(data) {
   //定义柱形图宽度
   var w;
   if (pageState.nowGraTime == "day") {
-    w = 10;
-  } else if (pageState.nowGraTime == "week") {
     w = 30;
+  } else if (pageState.nowGraTime == "week") {
+    w = 60;
   } else if (pageState.nowGraTime == "month") {
-    w = 90;
+    w = 180;
   }
   //生成图表
   for (var key in data) {
@@ -72,6 +72,8 @@ function renderChart(data) {
   //图表生成函数
   function drawChart(w, value,key) {
     var oDiv = document.createElement("div");
+    var oSpan = document.createElement("span");
+    oSpan.innerHTML = value;
     var color;
     oDiv.style.width = w + "px";
     oDiv.style.height = value + "px";
@@ -88,6 +90,7 @@ function renderChart(data) {
       color = colors[4];
     }
     oDiv.style.background = color;
+    oDiv.appendChild(oSpan);
     chart_wrap.appendChild(oDiv);
   }
 /*
@@ -214,7 +217,7 @@ function initAqiChartData() {
       } else {
         sum+= cityData[key];
         i++;
-        weekData["第"+j+"周"] = sum/i;
+        weekData["第"+j+"周"] = parseInt(sum/i);
         i=0
         j++
       }
@@ -241,9 +244,9 @@ function initAqiChartData() {
         k++
       }
     }
-    monthData["一月"] = month1/i;
-    monthData["二月"] = month2/j;
-    monthData["三月"] = month3/k;
+    monthData["一月"] = parseInt(month1/i);
+    monthData["二月"] = parseInt(month2/j);
+    monthData["三月"] = parseInt(month3/k);
     chartData = monthData;
     console.log(chartData);
   }
