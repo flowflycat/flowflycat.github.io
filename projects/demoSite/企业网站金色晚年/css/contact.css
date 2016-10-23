@@ -1,0 +1,13 @@
+.contactus{
+	max-width: 600px;
+	margin:0 auto 50px auto;
+}
+#map{
+	width: 100%;
+	height: 600px;
+	border:#ccc solid 1px;
+	font-size: 12px;
+}
+#map label.BMapLabel{
+	width: 14em;
+}

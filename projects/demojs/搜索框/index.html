@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>搜索框</title>
+  <meta http-equiv="X-UA-Compatible" cotent="IE=edge,chrome=1" />
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <div class="search-box">
+      <div class="logo"></div>
+      <form>
+        <input type="text" id="input-text">
+        <input type="submit" id="input-submit" value="">
+      </form>
+    </div>
+  </div>
+  <div class="suggest" id="search-suggest" style="display: none;">
+    <ul>
+      <li>搜索结果1</li>
+      <li>搜索结果2</li>
+      <li>搜索结果3</li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+  $("#input-text").on("keyup", function() {
+  	var input_text = $("#input-text").val();
+  	$.ajax({
+  		type: "GET",
+  		url: "http://api.bing.com/qsonhs.aspx?q="+input_text,
+  		dataType: "json",
+  		success: function(data){
+  			console.log(data);
+  		}
+  	});
+    $("#search-suggest").show().css({
+      "position": "absolute",
+      "top": $(".search-box").offset().top + $(".search-box>form").height()+10,
+      "left": $(".search-box>form").offset().left
+    });
+  })
+  $(document).on("click",function(){
+  	$("#search-suggest").hide();
+  });
+  $(document).delegate("li","click",function(){
+  	location.href="http://cn.bing.com/search?q="+
+  })
+  </script>
+</body>
+
+</html>

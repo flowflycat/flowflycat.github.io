@@ -1,0 +1,50 @@
+.m-alert-mask{
+	width: 1000px;
+	height: 500px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -500px;
+	border: 1px solid #000000;
+}
+.u-title{
+	background: #666666;
+	color: #ffffff;
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	border: 1px solid #000000;
+}
+.u-button{
+	background: #666666;
+	color: #ffffff;
+	width: 240px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	border: 1px solid #000000;
+}
+.m-alert-mask .m-content{
+	position: relative;
+	width: 100%;
+	height: 420px;
+}
+.m-content .u-button{
+	position: absolute;
+	bottom: 20px;
+}
+.m-content .f-ensure{
+	right: 280px;
+}
+.m-content .f-cancel{
+	right: 20px;
+}
+.s-mask {
+	background: rgba(0,0,0,0.3);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}

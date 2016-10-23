@@ -1,0 +1,462 @@
+/*css样式*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "微软雅黑";
+}
+
+
+/*清除浮动*/
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    height: 0;
+    line-height: 0;
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.wrap {
+    width: 100%;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*字号*/
+
+.font12 {
+    font-size: 12px;
+}
+
+.font16 {
+    font-size: 16px;
+}
+
+.font20 {
+    font-size: 20px;
+}
+
+.font24 {
+    font-size: 24px;
+}
+
+
+/*字体颜色*/
+
+.colorO {
+    color: #fe8300;
+}
+
+ul>li {
+    list-style: none;
+}
+
+
+/*top样式开始*/
+
+.top {
+    background: #f5c53d;
+    font-size: 12px;
+    padding: 1em 0;
+}
+
+.top .telphone {
+    float: left;
+}
+
+.top .language {
+    float: right;
+}
+
+.top .language a {
+    margin-right: 0.5em;
+}
+
+
+/*top样式结束*/
+
+
+/*header样式开始*/
+
+header {
+    font-size: 18px;
+}
+
+.logo>img {
+    max-width: 284px;
+    max-height: 108px;
+}
+
+.header-navbar {
+    float: right;
+    margin-bottom: 0;
+}
+
+.header-navbar>ul {
+    margin-bottom: 0;
+}
+
+.header-navbar>ul>li {
+    float: left;
+    position: relative;
+    margin-right: 1em;
+}
+
+.header-navbar>ul>li>a {
+    display: inline-block;
+    padding: 2.5em 0.5em;
+    text-decoration: none;
+    color: #666666;
+}
+
+.header-navbar>ul>li>a:hover,
+.header-navbar>ul>li>a.active {
+    color: #f49c3e;
+}
+
+.header-navbar .header-sub-navbar {
+    position: absolute;
+    z-index: 30;
+    top: 65%;
+    left: 0;
+    margin-left: 0.5em;
+    padding-left: 0;
+    background: #ffffff;
+    border: 2px solid #e9e9e9;
+    border-radius: 2px;
+    display: none;
+}
+
+.header-navbar>ul>li:hover .header-sub-navbar {
+    display: block;
+}
+
+.header-sub-navbar>li>a {
+    display: block;
+    padding: 0;
+    color: #aaaaaa;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #eeeeee;
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    width: 7em;
+    text-align: center;
+}
+
+.header-sub-navbar>li>a:hover {
+    color: #000000;
+}
+
+
+/*header样式结束*/
+
+
+/*banner样式*/
+
+.banner {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.banner>img {
+    width: 100%;
+}
+
+
+/*轮播图样式*/
+
+#slides {
+    display: none;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.slidesjs-navigation {
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-top: -16px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+a.slidesjs-next {
+    right: 2%;
+    background: url(../img/next_16.779026217228px_1150901_easyicon.net.png) no-repeat;
+}
+
+a.slidesjs-previous {
+    left: 2%;
+    background: url(../img/previous_16.779026217228px_1150902_easyicon.net.png) no-repeat;
+}
+
+.slidesjs-pagination {
+    margin: 1em 0;
+    position: absolute;
+    list-style: none;
+    left: 50%;
+    margin-left: -30px;
+    z-index: 20;
+    bottom: 1em;
+}
+
+.slidesjs-pagination li {
+    float: left;
+    margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+    display: block;
+    width: 13px;
+    height: 0;
+    padding-top: 13px;
+    background-image: url(../img/pagination.png);
+    background-position: 0 0;
+    float: left;
+    overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+    background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+    background-position: 0 -26px
+}
+
+.main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+ul.aside-navbar {
+    text-align: center;
+}
+
+ul.aside-navbar a {
+    font-size: 14px;
+    padding: 1em 0;
+    display: inline-block;
+    width: 100%;
+    background: #f2f2f2;
+    color: #666666;
+}
+
+ul.aside-navbar a:hover,
+ul.aside-navbar a.active {
+    color: #f49c3e;
+    background: #ffffff;
+    box-shadow: 0 0 3px rgba(244, 156, 62, .5);
+}
+
+ul.aside-navbar li.title {
+    font-size: 18px;
+    color: #000000;
+    background: #f49c3e;
+    padding: 1em 0;
+}
+
+.main-details {
+    position: relative;
+    padding-top: 20px;
+}
+
+.main-details-title h3 {
+    margin: 0 0 1em 0;
+    font-size: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 0;
+}
+
+.main-details-content p {
+    text-indent: 2em;
+    color: #666666;
+    margin-top: 1em;
+}
+
+.main-details-nav {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.main-details-nav span.nav-address {
+    color: #000000;
+}
+
+.mdc {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #909090;
+}
+
+.mdc-img {
+    float: left;
+}
+
+.mdc-text {
+    margin-left: 245px;
+}
+
+.content-title {
+    margin-bottom: 50px;
+}
+
+.content-center {
+    text-align: center;
+}
+
+p.textline span {
+    font-size: 12px;
+    color: #d2d2d2;
+    position: relative;
+    text-transform: uppercase;
+}
+
+p.textline span::before,
+p.textline span::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background: #d2d2d2;
+    width: 65px;
+    height: 2px;
+}
+
+p.textline span::before {
+    left: -75px;
+}
+
+p.textline span::after {
+    right: -75px;
+}
+
+.lp-img {
+    width: 320px;
+    height: 320px;
+    border: 1px solid #f6a465;
+    border-radius: 160px;
+    margin-left: 30px;
+    margin: 0 auto;
+}
+
+.lp-text-p {
+    width: 15em;
+    margin: 0 auto;
+}
+
+
+/*footer样式开始*/
+
+footer a {
+    text-decoration: none;
+}
+
+.footer-top {
+    background: #f5c53d;
+    padding: 50px 0 30px 0;
+}
+
+.footer-nav {
+    float: left;
+    margin-left: 20px;
+    margin-right: 70px;
+}
+
+ul.footer-navbar {
+    padding-left: 0;
+}
+
+ul.footer-navbar li,
+ul.footer-navbar li a {
+    font-size: 14px;
+    color: #666666;
+}
+
+ul.footer-navbar li.title a {
+    font-size: 16px;
+    color: #000000;
+    line-height: 2em;
+}
+
+.company-address-img {
+    float: left;
+}
+
+.copyright {
+    background: #f49c3e;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    padding: 25px 0;
+}
+
+
+/*footer样式结束*/
+
+
+/*客服模块样式开始*/
+
+#communication {
+    position: fixed;
+    z-index: 20;
+    right: 0;
+    background: #f4ca41;
+    color: #ffffff;
+    font-family: "黑体";
+    top: 35%;
+    padding: ;
+    height: 150px;
+    border: 1px solid #f4ca41;
+}
+
+#communication>p {
+    margin: 2em 0.5em;
+    width: 1em;
+}
+
+#communication-details {
+    z-index: 20;
+    background: #eeeeee;
+    width: 106px;
+    height: 150px;
+    border: 2px solid #f4ca41;
+    position: fixed;
+    right: 0;
+    visibility: hidden;
+    top: 35%;
+    padding: 1.5em 0.5em 0 0.5em;
+}
+
+#communication-details>p {
+    margin-bottom: 1em;
+}
+
+
+/*客服模块样式结束*/

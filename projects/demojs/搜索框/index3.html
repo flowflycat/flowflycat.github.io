@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>淘宝搜索框</title>
+  <style type="text/css">
+  @font-face{
+    font-family: iconfont;
+    src:url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.eot);
+  }
+  body {
+    font: 12px/1.5 tahoma, arial, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  .search-container{
+    position: relative;
+  }
+  .search-tips {
+    float: right;
+  }
+  
+  .search-tips a {
+    color: #6c6c6c;
+  }
+  
+  .search-button {
+    float: right;
+  }
+  
+  .search-button button {
+    background: url(http://gtms01.alicdn.com/tps/il/T1qyj8Fc8aXXc4e9bI-400-300.png) no-repeat 0 -200px;
+    width: 100px;
+    height: 45px;
+    border: 0;
+    cursor: pointer;
+  }
+  .search-common-panel {
+
+    height: 39px;
+    background-color: #f50;
+    overflow:hidden;
+    padding: 3px 0 3px 77px;
+  }
+  .search-common-panel input{
+    height: 39px;
+    line-height: 39px;
+    width: 100%;
+    border: 0 none;
+    outline: 0;
+    background-color: #fff;
+  }
+  .search-common-panel i{
+    position: absolute;
+    top: 14px;
+    left: 86px;
+    z-index: 2;
+  }
+  .iconfont{
+    font-family: iconfont;
+    font-size: 12px;
+    color: #666;
+  }
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .search-list {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 72px;
+    height: 39px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .search-list li{
+    height: 39px;
+    line-height: 39px;
+    background-color: #fff;
+    border-right: 1px solid #aaa;
+  }
+  .search-list li a{
+    color:#6c6c6c;
+  }
+  .selected {
+    background:#f6f6f6;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="search-container">
+    <div id="search_tab" class="search-list">
+      <ul>
+        <li id="tab_1" class="selected"><a href="#">宝贝</a></li>
+        <li id="tab_2"><a href="#">店铺</a></li>
+      </ul>
+    </div>
+    <div class="search-panner">
+      <form>
+        <div class="search-tips">
+          <a href="#">高级<br>搜索</a></div>
+        <div class="search-button">
+          <button type="submit" class="btn-search"></button>
+        </div>
+        <div class="search-common-panel">
+          <input type="text">
+          <i class="iconfont">ő</i>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var getDOM = function(id){
+      return document.getElementById(id);
+    }
+
+    var addEvent = function(id,event,fn){
+      var el = getDOM(id) || document;
+      if (el.addEventListener) {
+        el.addEventListener(event,fn,false);
+      } else if (el.attachEvent) {
+        el.attachEvent("on"+event,fn);
+      }
+    }
+    var tab_1 = getDOM("tab_1");
+    var tab_2 = getDOM("tab_1");
+    addEvent("tab_1","mouseover",function(){
+      getDOM("search_tab").style
+    })
+  </script>
+</body>
+
+</html>

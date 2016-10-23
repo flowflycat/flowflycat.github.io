@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>带有分散效果的瀑布流</title>
+  <link rel="stylesheet" type="text/css" href="demo3.css">
+  <script type="text/javascript" src="http://libs.baidu.com/jquery/1.10.2/jquery.js"></script>
+  <script>
+  $(document).ready(function() {
+    waterfall();
+    /*
+        var dataInt = {
+          "data": [
+          { "src": "P_00.jpg" },
+          { "src": "P_01.jpg" },
+          { "src": "P_02.jpg" },
+          { "src": "P_03.jpg" },
+          { "src": "P_04.jpg" },
+          { "src": "P_05.jpg" },
+          { "src": "P_06.jpg" },
+          { "src": "P_07.jpg" },
+          { "src": "P_08.jpg" },
+          { "src": "P_09.jpg" },
+          { "src": "P_010.jpg" },
+          { "src": "P_011.jpg" },
+          { "src": "P_012.jpg" },
+          { "src": "P_013.jpg" },
+          { "src": "P_014.jpg" },
+          { "src": "P_015.jpg" },
+          { "src": "P_016.jpg" },
+          { "src": "P_017.jpg" },
+          { "src": "P_018.jpg" },
+          { "src": "P_019.jpg" }
+        ]
+
+        };
+        window.onscroll = function() {
+          if (checkscrollside) {
+            var positionArr,;
+            $.each(dataInt.data, function(key, value) {
+              var oBox = $("<div>").addClass("box").appendTo($("#main"));
+              var oPic = $("<div>").addClass("pic").appendTo(oBox);
+              $("<img>").attr("src", "images/" + $(value).attr("src")).appendTo(oPic);
+       
+            positionArr[key] = {
+              "top": heightArr[minIndex],
+              "left": oPin_w * minIndex,
+              "z-index": oPins.eq(index).css("z-index")
+            };
+            })
+          }
+          waterfall();
+        }
+    */
+  });
+
+  function waterfall() {
+    // 计算及定位数据块显示分散效果
+    var oPins = $("#main").find(".pin");
+    var oPin_w = oPins.eq(0).outerWidth();
+    var cols = Math.floor($(window).width() / oPin_w);
+    //确定main宽度
+    $("#main").css({
+      "width": oPin_w * cols,
+      "margin": "0 auto"
+    });
+    var heightArr = [];
+    var positionArr = [];
+    oPins.each(function(index) {
+      if (index < cols) {
+        heightArr.push(oPins.eq(index).outerHeight());
+        positionArr[index] = {
+          "top": 0,
+          "left": oPin_w * index,
+          "z-index": oPins.eq(index).css("z-index")
+        };
+      } else {
+        var minH = Math.min.apply(null, heightArr);
+        var minIndex = $.inArray(minH, heightArr);
+        positionArr[index] = {
+          "top": heightArr[minIndex],
+          "left": oPin_w * minIndex,
+          "z-index": oPins.eq(index).css("z-index")
+        };
+        heightArr[minIndex] += oPins.eq(index).outerHeight();
+      }
+    });
+    //确定所有块的初始位置
+    oPins.each(function(index) {
+      //var arr = positionArr.slice(0,cols);
+      var start_top = Math.floor($(window).height() / 2 - 100 + Math.random() * 200);
+      var start_left = Math.floor($(window).width() / 2 - 200 + Math.random() * 400);
+      oPins.eq(index).css({
+        "position": "absolute",
+        "top": start_top,
+        "left": start_left,
+        "z-index": -index
+      });
+    });
+    disperseAnimate(oPins, positionArr, 0);
+  }
+  //分散块运动
+  function disperseAnimate(obj, arr, index) {
+    if (index < arr.length) {
+      arr[index]["z-index"] = index;
+      $(obj).eq(index).animate({
+        "top": arr[index].top + "px",
+        "left": arr[index].left + "px",
+        "z-index": 0
+      }, 500, function() {
+        index++;
+        disperseAnimate(obj, arr, index);
+      });
+    } else {
+      arr = [];
+      return false;
+    }
+  }
+  /*
+  function checkscrollside() {
+    var last = $("#main>.pin").last()
+    var lastT = last.offset().top + Math.floor(last.outerHeight() / 2);
+    var top = $(window).scrollTop() + $(window).height();
+    return lastT < top;
+  }
+  */
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_01.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_02.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_03.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_04.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_05.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_06.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_07.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_08.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_09.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_010.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_011.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_012.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_013.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_014.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_015.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_016.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_017.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_018.jpg" />
+      </div>
+    </div>
+    <div class="pin">
+      <div class="box">
+        <img src="images/P_019.jpg" />
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
