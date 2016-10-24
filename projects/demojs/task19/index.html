@@ -1,40 +1,67 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8"/>
-	<title>Task19</title>
-	<style type="text/css">
-		#sort-wrap{
-			height: 150px;
-			width: 80%;
-			margin: 0 auto;
-			display: flex;
-			align-items: flex-end;
-		}
-		#sort-wrap>div{
-			margin-left: 5px;
-		}
-		.red{
-			background: #ff0000; 
-		}
-		.green{
-			background: #00ff00;
-		}
-		.blue{
-			background: #0000ff;
-		}
-	</style>
+  <meta charset="utf-8" />
+  <title>Task19</title>
+  <style type="text/css">
+  #sort-wrap {
+    height: 150px;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  #sort-wrap>div {
+    margin-left: 5px;
+  }
+  
+  .red {
+    background: #ff0000;
+  }
+  
+  .green {
+    background: #00ff00;
+  }
+  
+  .blue {
+    background: #0000ff;
+  }
+  .inputBox{
+  	width: 50%;
+  	padding: 10px;
+  	border: 1px solid #000000;
+  }
+  #layout {
+  	width: 50%;
+  	display: flex;
+  	flex-wrap: wrap;
+  }
+  #layout div{
+	margin: 10px;
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center; 
+	border: 1px solid #000;
+	color: #fff;
+}	
+  </style>
 </head>
+
 <body>
-	<input type="text" id="text-data"/>
-	<input type="button" id="input-btn" value="输入"/>
-	<input type="button" id="sortlist-btn" value="排序"/>
-	<input type="button" id="rendered" value="生成图表"></input>
-	<span id="warning"></span><br/>
-	<div id="sort-wrap"></div>
-	<!--
-	<canvas id="drawing"></canvas>
-	-->
-	<script type="text/javascript" src="task19.js"></script>
+  <div class="inputBox">
+    <input type="text" id="text-data" placeholder="请输入10-100的数">
+    <button id="left-in">左侧入</button>
+    <button id="right-in">右侧入</button>
+    <button id="left-out">左侧出</button>
+    <button id="right-out">右侧出</button>
+    <button id="sortlist-btn">冒泡排序</button>
+    <button id="create-data">生成随机数组</button>
+  </div>
+  <div id="sort-wrap"></div>
+  <div id="layout"></div>
+  <script type="text/javascript" src="task19.js"></script>
 </body>
+
 </html>
