@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>经纬度显示</title>
+</head>
+<body>
+<div id = "data">
+  <h4>You are here:</h4>
+</div>
+<script>
+  // Only change code below this line.
+  if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(function(postion){
+      var html = "";
+      html += "<p>经度为:"+ position.coords.longitudr+"<br>维度为"+ position.coords.latitude +"</p>";
+      document.getElementById('data').appendChild(html);
+    })
+    
+  }
+  // Only change code above this line.
+</script>
+</body>
+</html>
+
+
