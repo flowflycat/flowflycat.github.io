@@ -100,3 +100,31 @@ footer p {
   text-align: center;
   line-height: 4;
 }
+
+.main {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main h1 {
+  color: #ffffff;
+}
+
+.main:before {
+  display: block;
+  content: "";
+  height: 100px;
+}
+
+.demo a {
+  display: inline-block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 200px;
+  color: #cccccc;
+}
+
+.demo a:hover {
+  color: #ffffff;
+}
